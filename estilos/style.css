@@ -1,4 +1,11 @@
-
+:root {
+    --cor1: #13171D;
+    --cor2: #3B7779;
+    --cor3: #0C0F14;
+    --cor4: #59BBBA;
+    --cor5: #C4C6C7;
+    --cor6: #B0B2B3;
+}
 
 * { /* Reset (Configurações Padrão) */
     margin: 0px;
@@ -7,7 +14,64 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     background-color: black;
     color: white;
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 1.6em;
+    color: var(--cor6);
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1.1em;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+header a:hover {
+    background-color: var(--cor5);
+    color: black;
+    transition: 0.3s;
+}
+
+#titulo {
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo > h1 {
+    font-size: 3em;
+}
+
+#corpo {
+    background-color: purple;
+}
+
+#projetos {
+    background-color: pink;
+}
+
+#contato {
+    background-color: blue;
 }
