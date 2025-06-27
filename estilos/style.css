@@ -22,6 +22,8 @@ body {
 header {
     background-color: var(--cor1);
     padding: 10px; /* Espaçamento interno */
+    position: fixed; /* Fixando a barra para acompanhar o usuário conforme ele for descendo no site*/
+    width: 100%;
 
     /* Flexblox para espaçar igualmente os itens */
     display: flex;
@@ -156,9 +158,11 @@ header a:hover {
 
 #contato > h1 {
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 #contato > p {
+    font-size: 1.1em;
     text-align: left;
 }
 
@@ -186,6 +190,10 @@ header a:hover {
 .linked {
     text-decoration: none;
     color: var(--cor4);
+}
+
+.linked:hover {
+    text-decoration: underline;
 }
 
 .nome > p, .link > p {
