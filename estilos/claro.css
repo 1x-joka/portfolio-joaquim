@@ -24,7 +24,7 @@ body.claro {
 }
 
 .claro header {
-    background-color: #f0f0f0;
+    background-color: lightgray;
     padding: 10px;
     position: fixed;
     width: 100%;
