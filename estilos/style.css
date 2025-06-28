@@ -37,6 +37,17 @@ header > h1 {
     color: white;
 }
 
+nav { /* Deixando responsivo para mexer no ícone */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.material-symbols-outlined {
+    font-size: 28px; /* Aumenta o tamanho do ícone */
+    cursor: pointer;
+}
+
 header > nav > a {
     text-decoration: none;
     color: white;
