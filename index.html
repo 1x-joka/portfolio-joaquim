@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/claro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contrast" />
 </head>
-<body>
+<body class="claro">
     <header>
         <h1>JOAQUIM LIMA</h1>
         <nav>
             <a href="#corpo">Sobre</a>
             <a href="#">Preços</a>
             <a href="#contato">Contato</a>
+            <span class="material-symbols-outlined" onclick="mudar()">contrast</span>
         </nav>
     </header>
     <main>
         <section id="titulo">
             <h1>Olá, explore meu Portfólio!</h1>
             <h2>Desenvolvedor Full-Stack</h2>
-            <a href="#">Veja meu trabalho</a>
+            <a href="#projetos">Veja meu trabalho</a>
         </section>
         <section id="corpo">
             <h1>SOBRE MIM</h1>
             <p>Meu nome é Joaquim, tenho 17 anos e atualmente estou cursando o 2º ano do Ensino Médio integrado ao curso técnico em <strong>Desenvolvimento de Sistemas</strong>. Ao longo da minha formação, venho me aprofundando tanto nas linguagens de programação quanto nas metodologias de desenvolvimento de software. </p>
-            <p>Tenho experiência intermediária em <strong>HTML, CSS, JavaScript, Python, MySQL e C#</strong>, além de conhecimentos básicos em PHP. Também possuo familiaridade com <strong>modelos de desenvolvimento Cascata e Ágil</strong>, e entendo os princípios e a estrutura do <strong>framework Scrum</strong>, incluindo seus papéis, eventos e artefatos.</p> <p>Atualmente, atuo como freelancer, conciliando os projetos com o ensino integral da escola e estudos complementares por conta própria. Estou sempre em busca de novos desafios e aprendizado contínuo, com o objetivo de evoluir como desenvolvedor e contribuir em projetos de forma eficiente e colaborativa.</p>
+            <p>Tenho experiência intermediária/avançada em <strong>HTML, CSS, JavaScript, Python, MySQL e C#</strong>, além de conhecimentos básicos em PHP. Também possuo familiaridade com <strong>modelos de desenvolvimento Cascata e Ágil</strong>, e entendo os princípios e a estrutura do <strong>framework Scrum</strong>, incluindo seus papéis, eventos e artefatos.</p> <p>Atualmente atuo como freelancer conciliando os projetos com o ensino integral da escola e estudos complementares por conta própria. Estou sempre em busca de novos desafios e aprendizado contínuo, com o objetivo de evoluir como desenvolvedor e contribuir em projetos de forma eficiente e colaborativa.</p>
         </section>
         <section id="projetos">
             <h1>PROJETOS</h1>
@@ -56,5 +59,10 @@
             </div>
         </section>
     </main>
+    <script>
+        function mudar() {
+            document.body.classList.toggle('claro'); // Faz a mudança de tema
+        }
+    </script>
 </body>
 </html>

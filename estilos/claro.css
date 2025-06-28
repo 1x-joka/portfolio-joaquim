@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* MODO CLARO */
+
+:root {
+    --cor1: #13171D;
+    --cor2: #3B7779;
+    --cor3: #0C0F14;
+    --cor4: #59BBBA;
+    --cor5: #13171D;
+    --cor6: #333;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body.claro {
+    background-color: white;
+    color: black;
+}
+
+.claro header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.claro header > h1 {
+    font-size: 1.6em;
+    color: var(--cor5);
+}
+
+.claro header > nav > a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1.1em;
+    padding: 10px;
+    border: 2px solid var(--cor5);
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.claro header a:hover {
+    background-color: var(--cor5);
+    color: white;
+    transition: 0.3s;
+}
+
+.claro #titulo {
+    background-color: lightgray;
+    padding: 90px;
+    text-align: center;
+    color: black;
+}
+
+.claro #titulo > h1 {
+    line-height: 1.4em;
+    font-size: 3em;
+}
+
+.claro #titulo > h2 {
+    line-height: 2.3em;
+    margin-bottom: 18px;
+}
+
+.claro #titulo > a {
+    color: var(--cor1);
+    text-decoration: none;
+    border: 2px solid var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    background-color: white;
+}
+
+.claro #titulo > a:hover {
+    background-color: var(--cor1);
+    color: white;
+    transition: 0.3s;
+}
+
+.claro #corpo {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.claro #corpo > h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.claro #corpo > p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+    text-indent: 2em;
+    width: 90vw;
+    color: #222;
+}
+
+.claro #projetos {
+    background-color: #e0e0e0;
+    padding: 50px;
+}
+
+.claro #container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.claro #projetos > h1 {
+    margin: 10px 10px 30px 10px;
+    font-size: 2em;
+    color: var(--cor5);
+}
+
+.claro .proj1, .claro .proj2, .claro .proj3 {
+    color: black;
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.claro #container h2, .claro #container p, .claro #container a {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.claro #container a {
+    display: block;
+    margin: auto;
+    color: var(--cor5);
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid var(--cor6);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.claro #container a:hover {
+    background-color: var(--cor5);
+    color: white;
+    transition: 0.3s;
+}
+
+.claro #contato {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.claro #contato > h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.claro #contato > p {
+    font-size: 1.1em;
+    text-align: left;
+    color: #222;
+}
+
+.claro #contato .nome, .claro .link, .claro .cntt {
+    display: block;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.claro #container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.claro .cntt {
+    font-size: 1.4em;
+    text-align: center;
+    color: var(--cor6);
+}
+
+.claro .linked {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.claro .linked:hover {
+    text-decoration: underline;
+}
+
+.claro .nome > p, .claro .link > p {
+    color: black;
+    text-align: left;
+}
+
+.claro span {
+    cursor: pointer;
+    color: var(--cor5);
+}
