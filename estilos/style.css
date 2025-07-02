@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+/* Modo Escuro */
+
 :root { /* Criando as variáveis */
     --cor1: #13171D;
     --cor2: #3B7779;
