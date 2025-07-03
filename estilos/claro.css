@@ -23,6 +23,10 @@ body.claro {
     color: black;
 }
 
+.claro section {
+    scroll-margin-top: 100px;
+}
+
 .claro header {
     background-color: lightgray;
     padding: 10px;

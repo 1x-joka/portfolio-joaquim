@@ -36,6 +36,10 @@ header {
     align-items: center;
 }
 
+section {
+    scroll-margin-top: 100px; /* Fazendo o conteúdo ficar centralizando quando o usuário clicar em um dos links no header */
+}
+
 header > h1 {
     font-size: 1.6em;
     color: white;
@@ -171,14 +175,75 @@ span {
     transition: 0.3s;
 }
 
-#contato {
+#precos {
+    height: 500px;
     background-color: var(--cor3);
+    padding: 50px;
+}
+
+#precos > h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#container3 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#container3 h2, p, a {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#container3 .valor {
+    font-weight: bolder;
+    font-size: 2.3em;
+}
+
+#container3 .descricao {
+    font-size: 1.2em;
+}
+
+#container3 a {
+    display: block;
+    margin: auto;
+    color: var(--cor4);
+    text-decoration: none;
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--cor1);
+    font-size: 1.3em;
+}
+
+#container3 a:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    transition: 0.3s;
+}
+
+#contato {
+    background-color: var(--cor1);
     padding: 50px;
 }
 
 #contato > h1 {
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.preco1, .preco2, .preco3 {
+    color: white;
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: var(--cor3);
 }
 
 #contato > p {
