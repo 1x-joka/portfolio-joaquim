@@ -213,7 +213,7 @@ span {
 #container3 a {
     display: block;
     margin: auto;
-    color: var(--cor4);
+    color: white;
     text-decoration: none;
     border: 2px solid var(--cor1);
     border-radius: 10px;
@@ -223,7 +223,7 @@ span {
 }
 
 #container3 a:hover {
-    background-color: var(--cor4);
+    background-color: white;
     color: var(--cor1);
     transition: 0.3s;
 }
@@ -255,27 +255,6 @@ span {
     text-align: center;
 }
 
-#contato .nome, .link, .cntt {
-    display: block;
-    width: 400px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.cntt {
-    font-size: 1.4em;
-    text-align: center;
-    color: rgb(199, 198, 198);
-}
-
 .linked {
     text-decoration: none;
     color: var(--cor4);
@@ -285,7 +264,46 @@ span {
     text-decoration: underline;
 }
 
-.nome > p, .link > p {
-    color: white;
-    text-align: left;
+footer {
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+footer > p {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#contato input {
+    font-size: 0.9em;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+#contato textarea {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+#contato .enviar {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border: 2px solid var(--cor4);
+    padding: 8px;
+    font-size: 1em;
+}
+
+#contato .enviar:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    transition: 0.3s;
+    cursor: pointer;
 }
