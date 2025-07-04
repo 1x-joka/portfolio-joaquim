@@ -100,6 +100,7 @@ body.claro {
 .claro #corpo > h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .claro #corpo > p {
@@ -118,7 +119,7 @@ body.claro {
 
 .claro #container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -126,6 +127,7 @@ body.claro {
     margin: 10px 10px 30px 10px;
     font-size: 2em;
     color: var(--cor5);
+    text-align: center;
 }
 
 .claro .proj1, .claro .proj2, .claro .proj3 {
@@ -161,36 +163,8 @@ body.claro {
     transition: 0.3s;
 }
 
-.claro #contato {
-    background-color: #f9f9f9;
-    padding: 50px;
-}
-
-.claro #contato > h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.claro #contato > p {
-    font-size: 1.1em;
-    text-align: left;
-    color: #222;
-}
-
-.claro #contato .nome, .claro .link, .claro .cntt {
-    display: block;
-    width: 400px;
-    margin: 10px;
-    border: 2px solid #aaa;
-    border-radius: 10px;
-    padding: 10px;
+.claro #precos {
     background-color: white;
-}
-
-.claro #container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .claro #container3 {
@@ -199,43 +173,65 @@ body.claro {
     gap: 40px;
 }
 
-#container3 h2, p, a {
+.claro .preco1, .claro .preco2, .claro .preco3 {
+    color: black;
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.claro #container3 h2, p, a {
     font-weight: normal;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#container3 .valor {
+.claro #container3 .valor {
     font-weight: bolder;
     font-size: 2.3em;
 }
 
-#container3 .descricao {
+.claro #container3 .descricao {
     font-size: 1.2em;
 }
 
-#container3 a {
+.claro #container3 a {
     display: block;
     margin: auto;
-    color: var(--cor4);
+    color: var(--cor5);
+    background-color: white;
     text-decoration: none;
-    border: 2px solid var(--cor1);
+    border: 2px solid var(--cor6);
     border-radius: 10px;
     padding: 10px;
-    background-color: var(--cor1);
     font-size: 1.3em;
 }
 
-#container3 a:hover {
-    background-color: var(--cor4);
-    color: var(--cor1);
+.claro #container3 a:hover {
+    background-color: var(--cor5);
+    color: white;
     transition: 0.3s;
 }
 
-.claro .cntt {
-    font-size: 1.4em;
+.claro #contato {
+    background-color: #e0e0e0;
+    padding: 50px;
+}
+
+.claro #contato > h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
     text-align: center;
-    color: var(--cor6);
+}
+
+.claro #contato > p {
+    font-size: 1.1em;
+    text-align: left;
+    color: #222;
+    text-align: center;
 }
 
 .claro .linked {
@@ -245,11 +241,6 @@ body.claro {
 
 .claro .linked:hover {
     text-decoration: underline;
-}
-
-.claro .nome > p, .claro .link > p {
-    color: black;
-    text-align: left;
 }
 
 .claro span {

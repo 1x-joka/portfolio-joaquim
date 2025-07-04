@@ -75,11 +75,11 @@
         <section id="contato">
             <h1>CONTATO</h1>
             <p>Sinta-se à vontade de saber mais sobre mim no <a href="https://www.linkedin.com/in/joaquim-pereira-a73386293/" class="linked" target="_blank">LinkedIN</a></p>
-            <div id="container2">
-                <div class="nome"><p>joaquimlima0612@email.com</p></div>
-                <div class="link"><p>Telefone: +55 (12) 98802-0200</p></div>
-                <div class="cntt">Entre em Contato!</div>
-            </div>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required placeholder="Preencha"></p>
+                <p><label for="iemail">Email: </label><input type="email" name="email" id="iemail" required placeholder="Preencha"></p>
+                <p><label for="imensagem">Mensagem:</label><br><textarea name="mensagem" id="imensagem" required placeholder="Escreva..."></textarea></p>
+            </form>
         </section>
     </main>
     <script>

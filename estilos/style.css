@@ -115,6 +115,7 @@ span {
 #corpo > h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #corpo > p {
@@ -133,13 +134,14 @@ span {
 
 #container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
 }
 
 #projetos > h1 {
     margin: 10px 10px 30px 10px;
     font-size: 2em;
+    text-align: center;
 }
 
 .proj1, .proj2, .proj3 {
@@ -234,6 +236,7 @@ span {
 #contato > h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .preco1, .preco2, .preco3 {
@@ -249,6 +252,7 @@ span {
 #contato > p {
     font-size: 1.1em;
     text-align: left;
+    text-align: center;
 }
 
 #contato .nome, .link, .cntt {
