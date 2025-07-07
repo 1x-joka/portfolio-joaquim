@@ -266,16 +266,37 @@ body.claro {
     border-radius: 5px;
     border: 2px solid transparent;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.089);
-    transition: border .3s ease-in-out;
+    transition: border .3s;
 }
 
 .claro #contato textarea {
     margin-top: 10px;
-    width: 350px;
+    width: 450px;
     height: 250px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid transparent;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.089);
-    transition: border .3s ease-in-out;
+    transition: border .3s;
+}
+
+.claro #contato .enviar {
+    background-color: white;
+    color: var(--cor5);
+    border: 2px solid transparent;
+    padding: 8px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.claro #contato .enviar:hover {
+    background-color: var(--cor5);
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.claro #contato #inome:focus, .claro #contato #iemail:focus, .claro #contato textarea:focus {
+    box-shadow: 0 0 5px 3px #0c0f145e;
+    transition: .3s;
 }

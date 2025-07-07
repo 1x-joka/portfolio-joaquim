@@ -286,7 +286,7 @@ footer > p {
 #contato textarea {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10px;
-    width: 350px;
+    width: 450px;
     height: 250px;
     padding: 10px;
     border-radius: 5px;
@@ -299,11 +299,17 @@ footer > p {
     border: 2px solid var(--cor4);
     padding: 8px;
     font-size: 1em;
+    font-weight: bold;
 }
 
 #contato .enviar:hover {
     background-color: var(--cor4);
     color: var(--cor1);
-    transition: 0.3s;
+    transition: .4s;
     cursor: pointer;
+}
+
+#contato #inome:focus, #contato #iemail:focus, textarea:focus { /* Após clicar... */
+    box-shadow: 0 0 8px 3px var(--cor4);
+    transition: .3s;
 }
