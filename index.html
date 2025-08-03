@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>JOAQUIM LIMA</h1>
+        <h1 id="recarregar">JOAQUIM LIMA</h1>
         <nav>
             <a href="#corpo">Sobre</a>
             <a href="#precos">Preços</a>
@@ -21,13 +21,13 @@
     <main>
         <section id="titulo">
             <h1>Olá, explore meu Portfólio!</h1>
-            <h2>Desenvolvedor Full-Stack</h2>
+            <h2>Desenvolvedor Back-End</h2>
             <a href="#projetos">Veja meu trabalho</a>
         </section>
         <section id="corpo">
             <h1>SOBRE MIM</h1>
             <p>Meu nome é Joaquim, tenho 17 anos e atualmente estou cursando o 2º ano do Ensino Médio integrado ao curso técnico em <strong>Desenvolvimento de Sistemas</strong>. Ao longo da minha formação, venho me aprofundando tanto nas linguagens de programação quanto nas metodologias de desenvolvimento de software. </p>
-            <p>Tenho experiência intermediária/avançada em <strong>HTML, CSS, JavaScript, Python, MySQL e C#</strong>, além de conhecimentos básicos em PHP. Também possuo familiaridade com <strong>modelos de desenvolvimento Cascata e Ágil</strong>, e entendo os princípios e a estrutura do <strong>framework Scrum</strong>, incluindo seus papéis, eventos e artefatos.</p> <p>Atualmente atuo como freelancer conciliando os projetos com o ensino integral da escola e estudos complementares por conta própria. Estou sempre em busca de novos desafios e aprendizado contínuo, com o objetivo de evoluir como desenvolvedor e contribuir em projetos de forma eficiente e colaborativa.</p>
+            <p>Tenho experiência intermediária/avançada em <strong>HTML, CSS, JavaScript, Python, MySQL e C#</strong>. Também possuo familiaridade com <strong>modelos de desenvolvimento Cascata e Ágil</strong>, e entendo os princípios e a estrutura do <strong>framework Scrum</strong>, incluindo seus papéis, eventos e artefatos.</p> <p>Atualmente atuo como freelancer conciliando os projetos com o ensino integral da escola e estudos complementares por conta própria. Estou sempre em busca de novos desafios e aprendizado contínuo, com o objetivo de evoluir como desenvolvedor e contribuir em projetos de forma eficiente e colaborativa.</p>
         </section>
         <section id="projetos">
             <h1>PROJETOS</h1>
@@ -54,13 +54,13 @@
             <div id="container3">
                 <div class="preco1">
                     <h2>Básico</h2>
-                    <p class="valor">R$150,00</p>
+                    <p class="valor">R$200,00</p>
                     <p class="descricao">Site Estático</p>
                     <a href="#">Contrate</a>
                 </div>
                 <div class="preco2">
                     <h2>Padrão</h2>
-                    <p class="valor">R$300,00</p>
+                    <p class="valor">R$350,00</p>
                     <p class="descricao">Site + Integrações</p>
                     <a href="#">Contrate</a>
                 </div>
@@ -74,7 +74,7 @@
         </section>
         <section id="contato">
             <h1>CONTATO</h1>
-            <p>Sinta-se à vontade de saber mais sobre mim no <a href="https://www.linkedin.com/in/joaquim-pereira-a73386293/" class="linked" target="_blank">LinkedIN</a></p>
+            <p>Sinta-se à vontade para saber mais sobre mim no <a href="https://www.linkedin.com/in/joaquim-pereira-a73386293/" class="linked" target="_blank">LinkedIN</a></p>
             <form action="mensagem.php" method="get" autocomplete="on">
                 <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required placeholder="Preencha"></p>
                 <p><label for="iemail">Email: </label><input type="email" name="email" id="iemail" required placeholder="Preencha"></p>
@@ -88,7 +88,7 @@
     </footer>
     <script>
         function mudar() {
-            document.body.classList.toggle('claro'); // Faz a mudança de tema após clicar no ícone
+            document.querySelector('body').classList.toggle('claro') // Usa-se 'toggle' ao invés de 'add' pois o navegador verifica se a classe 'claro' está aplicada no body, se não estiver ele adiciona, se estiver ele remove (tipo um interruptor)
         }
     </script>
 </body>
