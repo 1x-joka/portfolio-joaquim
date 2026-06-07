@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio - Joaquim</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -84,18 +85,65 @@
                 <h2 class="titulo2">Projetos.</h2>
                 <p>Alguns dos trabalhos e aplicações que desenvolvi.</p>
             </div>
-            <div class="projeto-card">
-                <div class="projeto-preview">
-                    <img src="imagens/controle de estoque.png" alt="Ilustração">
-                </div>
-                <div class="projeto-info">
-                    <h3>Sistema de Controle de Estoque</h3>
-                    <p>Interface construída com C#. A aplicação utiliza MySQL e linguagem C para gerenciar entradas e saídas de produtos com relatórios e controle em tempo real.</p>
-                    <div class="projeto-meta">
-                        <span><strong>Tecnologias:</strong> C# e MySQL</span>
-                        <span><strong>Tipo:</strong> Projeto Acadêmico</span>
+
+            <div class="carrossel">
+
+                <!-- PROJETO 1 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview">
+                        <img src="imagens/navegacao.png" alt="Projeto 1">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Template de Navegação</h3>
+                        <p>Aplicando conceitos de React Native para navegação com rota</p>
+                        <div class="projeto-meta">
+                            <span><strong>Tecnologias:</strong> React Native - Expo - JavaScript</span>
+                            <span><strong>Tipo:</strong> Projeto Acadêmico</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PROJETO 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview">
+                        <img src="imagens/flatlist.png" alt="Projeto 2">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>FlatList da Copa do Mundo 2026</h3>
+                        <p>Aplicando Modais para mostrar as seleções e escalação dos países</p>
+                        <div class="projeto-meta">
+                            <span><strong>Tecnologias:</strong> React Native - Expo - JavaScript</span>
+                            <span><strong>Tipo:</strong> Projeto Acadêmico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview">
+                        <img src="imagens/paginacao.png" alt="Projeto 3">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Paginação com Renderização</h3>
+                        <p>Demonstração de um menu contendo botões para mostrar 8 filmes que estão em cartaz</p>
+                        <div class="projeto-meta">
+                            <span><strong>Tecnologias:</strong> React Native - Expo - JavaScript</span>
+                            <span><strong>Tipo:</strong> Projeto Acadêmico</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTÕES DO CARROSSEL -->
+            <div class="carrossel-controles">
+                <button class="btn-carrossel" onclick="moverCarrossel(-1)">&#8592;</button>
+                <div class="carrossel-indicadores">
+                    <span class="indicador ativo"></span>
+                    <span class="indicador"></span>
+                    <span class="indicador"></span>
+                </div>
+                <button class="btn-carrossel" onclick="moverCarrossel(1)">&#8594;</button>
             </div>
         </section>
 
