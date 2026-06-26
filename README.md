@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Propósito
+##📋 Propósito
 
 O portifólio tem como objetivo esclarecer ao máximo minhas habilidades, eu como pessoa e desenvolvedor e facilitar o contato com recrutadores e comunidade de uma maneira precisa e rápida.
 
